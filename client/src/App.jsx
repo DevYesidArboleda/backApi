@@ -10,6 +10,7 @@ import { ProtectedRoute } from "./ProtectedRoute"
 import { TaskProvider } from "./context/tasksContext"
 import { Navbar } from "./components/Navbar"
 import ListPage from "./pages/ListPage"
+import ListExportPage from "./pages/ListExportPage"
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/tasks" element={ <TasksPage/> } />
               <Route path="/add-task" element={ <TaskFormPage/> } />
               <Route path="/list" element={ <ListPage/> } />
+              <Route path="/export" element={ <ListExportPage/> } />
               <Route path="/tasks/:id" element={ <TaskFormPage/> } />
             </Route>
           </Routes>
